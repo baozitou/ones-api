@@ -1,0 +1,28 @@
+- project数据库修改表字段值，修改成员数量上限
+    1. license表的status改成1, scale数字改大
+    2. team表的scale数字改大
+    3. organization表scale数字改大
+
+
+该脚本运行，请使用python3.x
+
+config.json里各配置点介绍
+    - ONES_API_URL: api地址
+    - EMAIL: 管理员账户邮箱
+    - REFERER: 环境referer认证地址
+    - PASSWORD: 管理员账户密码
+    - DEFAULT_PASSWORD: 注册新用户的时候需要的密码
+    - TEAM_UUID: 团队UUID
+    - PRIORITY：工作项优先级UUID
+    - RANGE_START_NUMBER, RANGE_END_NUMBER: 执行批量插入的时候的数字范围，会用于用户、项目、任务，在名字后面增加数字
+
+
+功能：
+    - 增加用户
+        - PYTHONPATH=$(pwd)/../ python3 add_person.py
+
+    - 增加项目里的任务数量，有交互提示，按着操作即可：任务数量：（RANGE_END_NUMBER-RANGE_START_NUMBER）* thread_num
+        - PYTHONPATH=$(pwd)/../ python3 add_task.py
+
+    - 增加项目，有交互提示，按着操作即可     项目数量：RANGE_END_NUMBER-RANGE_START_NUMBER）* thread_num
+        - PYTHONPATH=$(pwd)/../ python3 exec_projects.py

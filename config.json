@@ -1,0 +1,12 @@
+{
+    "ONES_API_URL" : "https://mars-dev.myones.net:11679/{main_product}/api/{minor_product}",
+    "REFERER": "https://mars-dev.myones.net:11679/{product}/",
+    "EMAIL":"marsdev@ones.ai",
+    "PASSWORD":"Test1234",
+    "DEFAULT_PASSWORD" : "Test1234",
+    "TEAM_UUID":"XRGt3AjT",
+    "PRIORITY": "dDjr51YQ",
+    "TEMPLATE_UUID":"bYNbTMhH",
+    "RANGE_START_NUMBER" : 2482,
+    "RANGE_END_NUMBER" : 2509
+}
